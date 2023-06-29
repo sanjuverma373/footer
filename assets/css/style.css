@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+  display: flex;
+  align-items: center;
+  
+}
+
+.col-3 {
+  width: 25%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: -12px;
+  margin-left: -12px;
+}
+.w_100 {
+  width: 100%;
+}
+.d_flex {
+  display: flex;
+}
+.min_vh{
+  min-height: 100vh;
+}
+.card {
+  background: #ffffff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+}
+.iconboxcontainer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: -40px;
+  top: 0;
+  height: 100%;
+  justify-content: center;
+  transition: all 200ms linear;
+}
+.iconbox {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.position_relative {
+  position: relative;
+}
+.name {
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 123.6%;
+  color: #000000;
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+.work {
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150.6%;
+  color: #7b7b7b;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.iconbox:hover svg path {
+  fill: white;
+}
+.iconbox:hover {
+  background: #ff5300;
+  box-shadow: 1px 7px 10px rgba(255, 83, 0, 0.5);
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.card:hover .iconboxcontainer {
+  right: 0;
+ 
+}
+@media (max-width:992px) {
+  .col_4_lg{
+    width: 33.33%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .mt_24_lg{
+    margin-top: 24px;
+  } 
+}
+@media (max-width:768px) {
+  .col_6_md{
+    width: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .mt_24_md{
+    margin-top: 24px;
+  }
+  
+}
+@media (max-width:576px) {
+  .col_12_sm{
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .mt_24_sm{
+    margin-top: 24px;
+  }
+  
+}
+
